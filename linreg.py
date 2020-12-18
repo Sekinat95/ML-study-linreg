@@ -89,8 +89,8 @@ def firstlinregmodel(x, y, epoch, lr, x_test):
     # PLOTS
     # data points
     plt.scatter(x, y, s=10)
-    plt.xlabel('math score')  # x
-    plt.ylabel('reading score')  # y
+    plt.xlabel('reading score')  # x
+    plt.ylabel('math score')  # y
 
     # predicted values
     plt.plot(x, y_train_pred, color='r')
@@ -258,5 +258,5 @@ x = train_data['reading score']
 x_test = test_data['reading score']
 
 print(firstlinregmodel(x, y, 1000, 0.001, x_test))
-print(absolutetrick(x, y, 1000, 0.00001))
+#print(absolutetrick(x, y, 1000, 0.00001))
 #print(squaretrick(x, y, 1000, 0.000001))
