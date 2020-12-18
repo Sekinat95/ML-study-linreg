@@ -98,8 +98,9 @@ def firstlinregmodel(x, y, epoch, lr, x_test):
     # predict on test data
     y_test_pred = m*x_test+c
     print(' y_test_predict: ', y_test_pred)
+    #plt.plot(intercept, sum_sq_residuals,color='green')
     plt.plot(slope, sum_sq_residuals, color='green')
-    plt.xlabel('slope')  # x
+    plt.xlabel('slope/intercept')  # x
     plt.ylabel('sum of squared residuals')  # y
     plt.show()
     return

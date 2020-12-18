@@ -25,6 +25,8 @@ def mygradientdescent(X, Y, epoch, L):
 
     plt.scatter(X, Y, s=10)
     plt.plot(x, Y_pred, color='r')  # predicted
+    plt.xlabel('reading score')  # x
+    plt.ylabel('math score')  # y
     plt.show()
     return
 
